@@ -1,0 +1,97 @@
+body, header, footer, h1, h2, button {
+	margin: 0;
+	padding: 0;
+	border: none;
+    }
+    
+    body {
+	background-color: #ccc;
+    }
+    
+    a {
+	transition: 0.4s;
+	color: #FFF;
+	text-decoration: none;
+    }
+    
+    /* HEADER */
+    header {
+	background-color: #31327a;
+	color: #FFF;
+	text-align: center;
+	padding: 30px;
+    }
+    
+    /* FOOTER */
+    
+    footer {
+	text-align: center;
+	padding: 15px;
+	font-size: 12px;
+	background-color: #a8a8a8;
+	color: #5e5e5e;
+    }
+    
+    /* GERAL */
+    .screen {
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	max-width: 900px;
+	height: 70vh;
+	margin: 50px auto;
+    }
+    
+    .voltar {
+	display: inline-block;
+	background-color: #8f8f8f;
+	padding: 5px;
+	font-size: 20px;
+	border-radius: 5px;
+	position: absolute;
+	left: 1vh;
+	transition: 0.3s;
+    }
+    
+    .voltar:hover {
+	background-color: #5253ad;
+    }
+    
+    .hidden {
+	display: none;
+    }
+    /* PAGINA INICIAL */
+    .screen .button_start {
+	width: 100%;
+	font-size: 20px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	border-bottom: 1px solid #5253ad;
+	background-color: #4d4faf;
+    }
+    
+    .screen .button_start:hover {
+	opacity: 0.8;
+    }
+    
+    @media screen and (min-width: 768px) {
+	
+	.screen {
+	    flex-wrap: nowrap;
+	}
+    
+	.screen .button_start:nth-child(1){
+	    background: rgb(0, 0, 0, 0.3) url(../img/jakempo.jpg);
+	}
+	.screen .button_start:nth-child(2){
+	    background: rgb(0, 0, 0, 0.3) url(../img/magicball.jpg);
+	}
+	.screen .button_start:nth-child(1n){
+	    background-blend-mode: darken;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+    }

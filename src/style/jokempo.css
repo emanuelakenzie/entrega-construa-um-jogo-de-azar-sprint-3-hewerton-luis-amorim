@@ -1,0 +1,151 @@
+/* GERAL */
+.icone {
+	width: 30px;
+    }
+    
+    .screen {
+	margin: 15px auto 50px;
+	border-radius: 10px;
+    }
+    
+    /* PAGINA INICIAL */
+    .placar {
+	width: fit-content;
+	margin: 10px auto 0;
+	font-size: 30px;
+    }
+    
+    .placar img {
+	margin: 0 10px;
+    }
+    
+    
+    
+    .div_player {
+	padding: 10px;
+	width: 100%;
+    }
+    
+    .div_player .jogador{
+	display: block;
+	width: 100px;
+	margin: auto;
+    }
+    
+    .div_player .opcoes {
+	width: fit-content;
+	margin: 0 auto;
+    }
+    
+    .div_player .opcoes button{
+	background-color: #0000;
+	padding: 15px;
+	transition: 0.4s;
+    }
+    .player .opcoes button:hover {
+	opacity: 0.8;
+	background-color: #2727df;
+	border-radius: 9px;
+	transform: scale(1.1);
+    }
+    
+    .android {
+	background-color: #ee4343;
+	border-radius: 0 0 10px 10px;
+    }
+    
+    .player {
+	background-color: #4343ee;
+	border-radius: 10px 10px 0 0;
+    }
+    
+    
+    
+    .screen .jokempo:nth-child(1){
+	background: rgb(0, 0, 0, 0.3) url(../img/pedra.png);
+    }
+    
+    .screen .jokempo:nth-child(2) {
+	background: rgb(0, 0, 0, 0.3) url(../img/papel.png);
+    }
+    
+    .screen .jokempo:nth-child(3) {
+	background: rgb(0, 0, 0, 0.3) url(../img/tesoura.png);
+    }
+    
+    .screen .jokempo:nth-child(1n){
+	background-blend-mode: darken;
+	background-repeat: space;
+	background-size: contain;
+    }
+    
+    .screen .jokempo:hover {
+	opacity: 0.7;
+    }
+    
+    .vencedor {
+	text-align: center;
+	padding: 20px 0;
+	width: 200px;
+	position: absolute;
+	top: 53vh;
+	left: calc(50vw - 100px);
+	border-radius: 10px;
+	background-color: #eeff00;
+	font-size: 30px;
+	font-weight: bold;
+    }
+    /* ANIMAÇÃO */
+    .vibra{
+	animation: vibracao 0.3s linear infinite;
+    }
+    @keyframes vibracao {
+	0% {
+	    transform: translateX(0);
+	}
+	25% {
+	    transform: translateX(8px);
+	}
+	50% {
+	    transform: translateX(0) translateY(10px);
+	}
+	75%{
+	    transform: translateX(-8px);
+	}
+	100%{
+	    transform: translateX(0);
+	}
+    }
+    @media screen and (min-width: 768px) {
+	.icone {
+	    width: 50px;
+	}
+    
+    
+	.screen {
+	    flex-wrap: nowrap;
+	    border-radius: 0;
+	}
+    
+	.voltar {
+	    left: 220px;
+	}
+    
+	.div_player {
+	    border-radius: 0;
+	}
+    
+	.div_player .jogador{
+	    width: 150px;
+	    margin: 9vh auto;
+	}
+    
+	.vencedor {
+	    padding: 30px 0;
+	    width: 250px;
+	    position: absolute;
+	    top: calc(50vh - 50px);
+	    left: calc(50vw - 125px);
+	    font-size: 50px;
+	}
+    }
